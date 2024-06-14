@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
+  img = 'https://picsum.photos/640/640?r=' + Math.random();
 
 }
