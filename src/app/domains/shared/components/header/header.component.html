@@ -79,10 +79,10 @@
         <img class="w-6 h-6" [src]="product.images[0]" [alt]="product.title">
         <h3>{{ product.title }}</h3>
       </div>
-      <p>{{ product.price }}</p>
+      <p>{{ product.price | currency : "$" : "symbol" : "1.0" }}</p>
     </div>
     <div>
-      Total: {{ total() }}
+      Total: {{ total() | currency : "$" : "symbol" : "1.0" }}
     </div>
   </div>
 </div>
