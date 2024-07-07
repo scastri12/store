@@ -1,11 +1,14 @@
-<div>
-    <h1>About</h1>
-    <p class="text-xs">Lorem ipsum dolor <span highlight>sit amet, consectetur adipisicing elit.</span> Alias, similique nulla? Repellat, voluptate ratione? Fuga, ad tenetur. Sint minima assumenda praesentium magnam dolores totam, ex quam voluptatum illo temporibus commodi!</p>
-    <p class="text-xs">Numero de clientes <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"></app-counter>
-    </p>
+<div class="container px-20">
+    <app-header/>
     <div>
-        <app-wave-audio audioUrl="assets/audio.mp3"></app-wave-audio>
+        <h1 class="text-lg font-bold">About</h1>
+        <p class="text-base">Lorem ipsum dolor <span highlight>sit amet, consectetur adipisicing elit.</span> Alias, similique nulla? Repellat, voluptate ratione? Fuga, ad tenetur. Sint minima assumenda praesentium magnam dolores totam, ex quam voluptatum illo temporibus commodi!</p>
+        <p class="text-base">Numero de clientes <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"></app-counter>
+        </p>
+        <div>
+            <app-wave-audio audioUrl="assets/audio.mp3"></app-wave-audio>
+        </div>
     </div>
-</div>
+  </div>
 
 
