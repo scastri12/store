@@ -2,14 +2,14 @@ import { Component, inject, Input, signal, SimpleChange, SimpleChanges } from '@
 import { CommonModule } from '@angular/common';
 import { Product } from '@shared/models/product.model';
 import { CartService } from '@shared/services/cart.service';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
